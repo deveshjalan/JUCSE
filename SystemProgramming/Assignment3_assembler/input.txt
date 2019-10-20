@@ -1,0 +1,23 @@
+;macro data
+SWAP MACRO $1 $2
+MOV A , $1
+MOV $1 , $2
+MOV $2 , A
+MEND
+;hello 
+;code starts
+START 2000
+LDA 2510H
+MOV B , A
+LDA 2511H
+MOV D , A
+MVI C , 87H
+SWAP B C
+MOV A , D
+ADD B
+STA 2512H
+JNC X
+MVI A , 01H
+STA 2513H
+X : RST 5
+END
