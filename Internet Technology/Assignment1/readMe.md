@@ -11,10 +11,10 @@
 
 Commands can be in form 
 
-put < key > < value >
-get < key >
-makemanager
-getuser < username > < key > 
+* put < key > < value >
+* get < key >
+* makemanager
+* getuser < username > < key > 
 
 All commands can be mixed and used together in the argruments.
 
