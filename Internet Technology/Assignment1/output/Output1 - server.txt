@@ -1,0 +1,36 @@
+
+devesh@devesh:~/Desktop/Internet Technology/Assignment1$ python3 server.py 
+--------------------------------------
+Connected to client user :  user1
+--------------------------------------
+Request- PUT- Key:  city  Value : Kolkata  = SUCCESS
+Request- PUT- Key:  country  Value : India  = SUCCESS
+Request- GET - Key:  country  Value : India
+Request- GET - Key:  city  Value : Kolkata
+Request- GET - No value found for key : Institute
+
+--------------------------------------
+Connected to client user :  devesh
+--------------------------------------
+Request- Make Manager = SUCCESS
+
+--------------------------------------
+Connected to client user :  devesh
+--------------------------------------
+Request- PUT- Key:  name  Value : devesh  = SUCCESS
+Request- PUT- Key:  roll  Value : 001710501071  = SUCCESS
+Request- PUT- Key:  subject  Value : IT  = SUCCESS
+Request- PUT- Key:  assignment  Value : 1  = SUCCESS
+Request- GETUSER - Username : user1  Key:  country  Value :  India
+Request- GET - Key:  subject  Value : IT
+
+--------------------------------------
+Connected to client user :  user2
+--------------------------------------
+Request- GET - No value found for key : city
+Request- PUT- Key:  city  Value : Ranchi  = SUCCESS
+Request- GET - Key:  city  Value : Ranchi
+Request- PUT- Key:  city  Value : Darjeeling  = SUCCESS
+Request- GET - Key:  city  Value : Darjeeling
+
+

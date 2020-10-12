@@ -1,0 +1,33 @@
+CLIENT 1
+
+devesh@devesh:~/Desktop/Internet Technology/Assignment1$ python3 client.py 127.0.0.1 8080 put city Kolkata put country India get country get city get Institute
+Enter Username : user1
+--------------------------------
+India
+Kolkata
+<blank>
+----------Disconnected-----------
+
+devesh@devesh:~/Desktop/Internet Technology/Assignment1$ python3 client.py 127.0.0.1 8080 get city put city Ranchi get city put city Darjeeling get city
+Enter Username : user2
+Prompt: New Client Profile Created
+--------------------------------
+<blank>
+Ranchi
+Darjeeling
+
+
+CLIENT 2
+
+devesh@devesh:~/Desktop/Internet Technology/Assignment1$ python3 client.py 127.0.0.1 8080 makemanager 
+Enter Username : devesh
+--------------------------------
+Upgarded to Authorization Level : Manager 
+----------Disconnected-----------
+devesh@devesh:~/Desktop/Internet Technology/Assignment1$ python3 client.py 127.0.0.1 8080 put name devesh put roll 001710501071 put subject IT put assignment 1 getuser user1 country get subject
+Enter Username : devesh
+--------------------------------
+User: user1 Key : country Value : India
+IT
+----------Disconnected-----------
+

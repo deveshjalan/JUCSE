@@ -1,0 +1,28 @@
+Output Description : To show how a new manager can be added with a password
+
+
+SERVER
+
+devesh@devesh:~/Desktop/Internet Technology/Assignment1$ python3 server.py
+--------------------------------------
+Connected to client user :  user123
+--------------------------------------
+Updated
+Request- Make Manager = SUCCESS via password
+Request- PUT- Key:  city  Value : Kolkata  = SUCCESS
+Request- GETUSER - Username : devesh  Key:  roll  Value :  001710501071
+
+
+
+
+CLIENT
+
+devesh@devesh:~/Desktop/Internet Technology/Assignment1$ python3 client.py 127.0.0.1 8080 makemanager put city Kolkata getuser devesh roll
+Enter Username : user123
+Enter password to upgarde authorization to Manager : 0000
+Prompt: New Client Profile Created
+--------------------------------
+Upgarded to Authorization Level : Manager 
+User: devesh Key : roll Value : 001710501071
+----------Disconnected-----------
+
